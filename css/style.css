@@ -159,7 +159,6 @@ main aside{
 }
 main aside button#close-btn{
     border: none;
-    /* will be show only on mobile and tablets */
     display: none;
 }
 main aside .sidebar a{
