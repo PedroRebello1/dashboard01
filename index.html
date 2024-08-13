@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investments Dashboard</title>
+
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav>
+        <div class="container">
+            <h2>Dashboard de Investimentos</h2>
+        </div>
+    </nav>
+    
+
+    <!-- main -->
+
+    <main>
+
+         <!-- aside -->
+        <aside>
+            <button id="close-btn">
+                <span class="material-icons-sharp">close</span>
+            </button>
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">dashboard</span>
+                    <h4>Dashboard</h4>
+                </a>
+            </div>
+        </aside>
+
+         <!-- section middle -->
+        <section class="middle">
+            <div class="header">
+                <h1>Overview</h1>
+            </div>
+            
+            <!-- monthly report -->
+            <div class="monthly-report">
+                <div class="report">
+                    <h3>Saldo</h3>
+                    <div>
+                        <h1 id="incomeText">R$230,00</h1>
+                    </div>
+                </div>
+
+                <div class="report">
+                    <h3>Investido</h3>
+                    <div>
+                        <h1 id="investmentsOriginal">R$230,00</h1>
+                    </div>
+                </div>
+
+                <div class="report">
+                    <h3>Investimento</h3>
+                    <div>
+                        <h1 id="investmentsTotal">$4,390</h1>
+                        <h4 id="investmentsChange" class="success">+2.9%</h4>
+                    </div>
+                </div>
+
+                <div class="report">
+                    <h3>Ganhos</h3>
+                    <div>
+                        <h1 id="earningsText">$86,374</h1>
+                    </div>
+                </div>
+            </div>
+            
+             <!-- canvas -->
+             <canvas id="chart"></canvas>
+
+        </section>
+
+         <!-- section right -->
+         <section class="right">
+             <!-- investments -->
+            <div class="investments">
+                <div class="header">
+                    <h2>Investments</h2>
+                    <a href="#">More <span class="material-icons-sharp">chevron_right</span></a>
+                </div>
+                 <!-- investment var -->
+                 <div class="investment">
+                    <img src="img/apple-64.png" alt="inv2">
+                    <h4>Apple</h4>
+                    <div class="date-time">
+                        <p>7 Fev, 2023</p>
+                        <small class="text-muted">9:14pm</small>
+                    </div>
+                    <div class="bonds">
+                        <p>8</p>
+                        <small class="text-muted">Ativos</small>
+                    </div>
+                    <div class="amount">
+                        <h4 id="appleAmount">$196,81</h4>
+                        <small class="success">+1.05%</small>
+                    </div>
+                </div>
+                <div class="investment">
+                    <img id="imgnvidia" src="img/nvidia.png" alt="inv3">
+                    <h4>Nvidia</h4>
+                    <div class="date-time">
+                        <p>7 Fev, 2023</p>
+                        <small class="text-muted">9:14pm</small>
+                    </div>
+                    <div class="bonds">
+                        <p>20</p>
+                        <small class="text-muted">Ativos</small>
+                    </div>
+                    <div class="amount">
+                        <h4 id="nvidiaAmount">$102,51</h4>
+                        <small class="danger">-0.30%</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.0/chart.min.js" integrity="sha512-R60W3LgKdvvfwbGbqKusRu/434Snuvr9/Flhtoq9cj1LQ9P4HFKParULqOCAisHk/J4zyaEWWjiWIMuP13vXEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="js/script.js"></script>
+</body> 
+</html>
